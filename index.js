@@ -9,7 +9,8 @@ const port = process.env.PORT|| 4400;
 
 
 
-// middleware
+// middleware 
+
 app.use(cors());
 app.use(express.json());
 
