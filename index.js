@@ -18,6 +18,7 @@ const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 // console.log(uri)
 
+
 async function run() {
     try {
         await client.connect();
@@ -175,7 +176,7 @@ run().catch(console.dir);
 
 
 app.get('/', (req, res) => {
-  res.send('Hello doctors portal!')
+  res.send('Hello drone media')
 })
 
 app.listen(port, () => {
